@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form with iframe result</title>
+    <script>
+        function loadResult(event) {
+            event.preventDefault();
+            document.getElementById('resultFrame').src = 'result.html';
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="loadResult(event)">
+        <label for="textinput">Enter Text:</label><br>
+        <input type="text" id="textinput" name="textinput" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <iframe id="resultFrame" width="100%" height="100" title="Result"></iframe>
+</body>
+</html>
