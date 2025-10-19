@@ -1,0 +1,23 @@
+body {
+  background-color: #ffe0b2;
+  padding: 20px;
+  font-family: Georgia, serif;
+  text-align: justify;
+}
+h1 {
+  column-span: all;
+  text-align: center;
+}
+article {
+  column-count: 3;
+  column-gap: 20px;
+}
+.left-img {
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  border-radius: 8px;
+}
+mark {
+  background-color: #ffd700;
+}
