@@ -1,0 +1,33 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia, 'Times New Roman', serif;color:#222;background:#f6f7fb}
+.container{max-width:1100px;margin:0 auto;padding:2rem}
+header .nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+header nav a{margin-left:1rem;text-decoration:none;color:#114b5f}
+
+
+/* Each section full-width background */
+.full-bg{background-image:url('https://via.placeholder.com/1600x600');background-size:cover;background-position:center;color:white;padding:7rem 0}
+
+
+/* Linear gradient section */
+.gradient-linear{background:linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);padding:4rem 0}
+
+
+/* Radial gradient section */
+.gradient-radial{background:radial-gradient(circle at 20% 20%, #f3e9ff, #d6e6ff);padding:4rem 0}
+
+
+/* Sections that demonstrate background-attachment: fixed (parallax-like) */
+.fixed-bg{background-image:url('https://via.placeholder.com/1200x800');background-attachment:fixed;background-size:cover;background-position:center;color:white;padding:8rem 0}
+.fixed-bg-2{background-image:url('https://via.placeholder.com/1200x900/222/fff');background-attachment:fixed;background-size:cover;background-position:center;color:white;padding:6rem 0}
+
+
+/* spacing and borders */
+.panel{margin:1rem 0;border:1px solid rgba(0,0,0,0.06);box-shadow:0 2px 6px rgba(0,0,0,0.04)}
+h1,h2,h3{font-weight:700}
+h1{font-size:2rem}
+h2{font-size:1.75rem}
+h3{font-size:1.25rem}
+
+
+footer{padding:2rem 0;text-align:center;color:#666}
