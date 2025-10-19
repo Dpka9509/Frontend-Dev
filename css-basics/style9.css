@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Sticky Header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.8);
+  padding: 10px 20px;
+  z-index: 9999;
+}
+.sticky-header nav {
+  display: flex;
+  justify-content: center;
+}
+.sticky-header a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 3em;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+}
+
+/* About: two columns */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+.about .text { flex: 1; min-width: 300px; padding: 20px; }
+.about .image { flex: 1; min-width: 300px; padding: 20px; }
+.about img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Services in a row */
+.services {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+}
+.service-box {
+  flex: 1;
+  min-width: 200px;
+  background: #f0f0f0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Contact form styles */
+.contact-section {
+  padding: 40px;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+}
+.main-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+}
+.main-form input, .main-form textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.main-form input:focus, .main-form textarea:focus {
+  border-color: #007bff;
+}
+button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover { background-color: #0056b3; }
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
