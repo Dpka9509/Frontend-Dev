@@ -1,0 +1,21 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,Arial;background:#f0f4f8}
+.container{max-width:1000px;margin:2rem auto;padding:1rem}
+.team{display:flex;gap:1rem}
+.card{flex:1;padding:1.25rem;border:1px solid #d0d7de;border-radius:12px;box-shadow:0 6px 18px rgba(12,20,30,0.06);background:white}
+.card h4{margin-bottom:0.25rem}
+.role{font-weight:600;color:#6b7280;margin-bottom:0.5rem}
+
+
+/* Highlight team lead */
+.card.lead{background:#fff7ed;border:2px dashed #f59e0b}
+
+
+/* Box model demo: uniform padding & margin */
+.card + .card{ /* space between cards handled by gap */ }
+
+
+/* Responsive: single column under 600px */
+@media (max-width:600px){
+.team{flex-direction:column}
+}
