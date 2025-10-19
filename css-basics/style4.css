@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+.pricing {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  flex: 1;
+  max-width: 300px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+.plan:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.05);
+}
+
+/* Highlight most popular */
+.premium {
+  border-color: #ff6f00;
+  border-width: 3px;
+}
+h2 { text-align: center; }
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  padding: 10px 0;
+}
+.price {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 20px 0;
+}
+.btn {
+  display: inline-block;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+}
