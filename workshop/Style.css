@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+/* universal selector used to remove by default margin padding */
+.head{
+     background-color:darkgray;
+     margin-top :1px;
+     margin-left: 2px;
+     padding: 10px;
+    }
+.main{
+    display:flex;
+    gap:2px;
+     margin-left: 2px;
+   
+}
+.home{
+    background-color: black;
+    color:white;
+    padding:10px;
+}
+.about{
+    background-color: black;
+    color:white;
+     padding:10px;
+}
+.serv{
+    background-color: black;
+    color:white;
+    padding:10px;
+
+}
+.contact{
+    background-color: black;
+    color:white;
+     padding:10px;
+     width:1500px;
+}
+.empty{
+    background-color:black;
+    width:5000px;
+    
+}
+.content{
+    display:flex;
+    gap:1px;
+
+}
+.page{
+ padding:20px;
+  flex:1px;
+    background-color: darkgray;
+  
+ 
+
+}
+.heading{
+    color:blue;
+    margin-left: 3px;
+}
+.para{
+   
+     margin-left: 4px;
+
+     color:black;
+}
+.aside{
+    
+    color:blue;
+    text-align: right;
+    display:flex;
+   background-color: darkgray ;
+}
+.para2{
+    color:black;
+    text-align: justify ;
+   
+    
+}

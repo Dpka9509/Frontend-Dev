@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!-- get used for small data  , post used for large data  -->
+    <form action="" method="get">
+        <label for="fname">FirstName:</label>
+        <input type="text" name="fname" id="fname"> 
+        <br> <br>
+        <label for="lname">LastName:</label>
+        <input type="text" name="Ulname" id="lname"> 
+        <br><br>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass">
+        <br><br>
+      
+        <label for="">Courses</label>
+        <select name="courses" id="">
+            <option value=""></option>
+            <option value="btech">Btech</option>
+            <option value="bpharma">Bpharma</option>
+        </select>
+
+        <br>
+        <label for="">Gender</label>
+        <input type="radio" name="gender" value="male" id="">
+        <label for="">Male</label>
+        <input type="radio" name="gender" value="female" id="">
+        <label for="">Female</label>
+        <input type="radio" name="gender" value="trans" id="" disabled>
+        <label for="">Trans</label>
+
+        <br><br>
+        <label for="">Subject</label>
+        <input type="checkbox" name="option[]" value="html" id="">
+        <label for="">HTML</label>
+        <input type="checkbox" name="option[]" value="css" id="">
+        <label for="">css</label>
+        <input type="checkbox" name="option[]" value="js" id="">
+        <label for="">js</label>
+        <br> <br><br><br>
+        <input type="submit" value="Submit">
+        <!-- <button type="submit">Submit</button> -->
+    </form>
+</body>
+</html>
