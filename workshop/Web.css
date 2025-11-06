@@ -1,0 +1,95 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: #CCD6E7 ;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        nav{
+            background-color: #333333;
+            padding: 10px 5px;
+        }
+       
+        nav a{
+            display: inline-block;
+            color:white;
+            text-decoration: none;
+            border-right: 1px solid white;
+        }
+
+        nav a:last-child{
+            border: none;
+        }
+
+        section{
+            float:left;
+            width:70%;
+        }
+
+        main{
+            border: 1px solid red;
+            height : 81vh;  
+        }
+
+        aside{
+            float:right;
+            background-color: #CCD6E7;
+            width: 28%;
+            height : 100%;
+        }
+
+        footer{
+            background-color: #CCD6E7 ;
+            text-align:center;
+            padding : 10px;
+        }
+
+        .mobile-menu{
+            /* display: none; */
+            visibility: hidden;
+        }
+
+        /* tablet view  */
+        @media (max-width : 768px) {
+            section, aside{
+                float:none;
+                width : 98%;
+                /* height : 200px; */
+                margin: 10px;
+                padding: 10px;
+            }
+
+            aside{
+                height : auto;
+            }
+        }
+
+        /* mobile-device */
+        @media (max-width : 400px){
+            section{
+                background-color: aqua;
+            }
+
+            aside{
+                background-color: gray;
+            }
+
+            .mobile-menu{
+                visibility: visible;
+                width: 100%;
+                background-color: gray;
+                padding: 10px;
+            }
+
+            .mobile-menu option{
+                background-color: white;
+            }
+
+            nav{
+                visibility:hidden;
+            }
+        }

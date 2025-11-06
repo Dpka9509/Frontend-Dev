@@ -42,18 +42,24 @@
     width:5000px;
     
 }
-.content{
-    display:flex;
-    gap:1px;
-
+.content {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
 }
-.page{
- padding:20px;
-  flex:1px;
-    background-color: darkgray;
-  
- 
 
+/* Left Content Area */
+.page {
+    width: 70%; /* bigger area on left */
+    background-color: #ddd;
+    padding: 20px;
+}
+
+/* Right Aside Area */
+.aside {
+    width: 30%; /* smaller area on right */
+    background-color: #bbb;
+    padding: 20px;
 }
 .heading{
     color:blue;
@@ -65,13 +71,7 @@
 
      color:black;
 }
-.aside{
-    
-    color:blue;
-    text-align: right;
-    display:flex;
-   background-color: darkgray ;
-}
+
 .para2{
     color:black;
     text-align: justify ;
