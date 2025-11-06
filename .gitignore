@@ -1,0 +1,51 @@
+# ----------------------------------------------------------------------
+# 1. Dependency/Package Manager Folders
+# ----------------------------------------------------------------------
+/node_modules
+/jspm_packages/
+/bower_components/
+/vendor/
+
+# ----------------------------------------------------------------------
+# 2. Build/Dist/Generated Folders (Files generated from your code)
+# ----------------------------------------------------------------------
+/dist
+/build
+/out
+/coverage
+
+# ----------------------------------------------------------------------
+# 3. Environment & Secrets
+# ----------------------------------------------------------------------
+# Local environment variables and secrets (NEVER commit these)
+.env
+.env.local
+.env.*.local
+
+# ----------------------------------------------------------------------
+# 4. IDE/Editor Files (Specific to your local machine/settings)
+# ----------------------------------------------------------------------
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json # Optional: if you want to share workspace settings
+!.vscode/tasks.json    # Optional: if you want to share workspace tasks
+!.vscode/launch.json   # Optional: if you want to share debug configuration
+
+# General IDE/Editor files (common on many systems)
+*.sublime-workspace
+.idea/
+
+# ----------------------------------------------------------------------
+# 5. Operating System (OS) Files
+# ----------------------------------------------------------------------
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# ----------------------------------------------------------------------
+# 6. Project-Specific Ignores
+# ----------------------------------------------------------------------
+/workshop/
