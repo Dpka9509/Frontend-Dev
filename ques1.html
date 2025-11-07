@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Borders & Padding Demonstration</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f7fafc;
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    header .lead {
+      color: #555;
+      margin: 0;
+    }
+
+    .box-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background: white;
+      border: 3px solid #ccc;
+      width: 200px;
+    }
+
+    .padding-small { padding: 8px; }
+    .padding-medium { padding: 16px; }
+    .padding-large { padding: 32px; }
+
+    .solid { border-style: solid; }
+    .dashed { border-style: dashed; }
+    .double { border-style: double; }
+    .groove { border-style: groove; }
+
+    .rounded-sm { border-radius: 6px; }
+    .rounded-md { border-radius: 14px; }
+    .rounded-full { border-radius: 999px; }
+
+    .box:hover {
+      border-color: #2563eb;
+      transition: 0.3s;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #444;
+    }
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <h1>Borders & Padding — Demonstration</h1>
+    <p class="lead">Examples of border styles, rounded corners, and padding.</p>
+  </header>
+
+  <main>
+
+    <section class="examples">
+      <h2>Border Styles</h2>
+
+      <div class="box-row">
+        <article class="box solid padding-medium">
+          <h3>Solid Border</h3>
+          <p>border-style: solid;</p>
+        </article>
+
+        <article class="box dashed padding-small">
+          <h3>Dashed Border</h3>
+          <p>border-style: dashed;</p>
+        </article>
+
+        <article class="box double padding-large">
+          <h3>Double Border</h3>
+          <p>border-style: double;</p>
+        </article>
+
+        <article class="box groove padding-medium">
+          <h3>Groove Border</h3>
+          <p>border-style: groove;</p>
+        </article>
+      </div>
+
+
+      <h2>Rounded Corners</h2>
+      <div class="box-row">
+        <article class="box solid rounded-sm padding-medium">
+          <h3>Small Radius</h3>
+          <p>border-radius: 6px;</p>
+        </article>
+
+        <article class="box solid rounded-md padding-medium">
+          <h3>Medium Radius</h3>
+          <p>border-radius: 14px;</p>
+        </article>
+
+        <article class="box solid rounded-full padding-medium">
+          <h3>Full Radius</h3>
+          <p>border-radius: 999px;</p>
+        </article>
+      </div>
+
+
+      <h2>Padding Examples</h2>
+      <div class="box-row">
+        <article class="box solid padding-small">
+          <h3>Small Padding</h3>
+          <p>padding: 8px;</p>
+        </article>
+
+        <article class="box solid padding-medium">
+          <h3>Medium Padding</h3>
+          <p>padding: 16px;</p>
+        </article>
+
+        <article class="box solid padding-large">
+          <h3>Large Padding</h3>
+          <p>padding: 32px;</p>
+        </article>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made using Internal CSS only.</p>
+  </footer>
+
+</body>
+</html>
