@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced CSS Selectors Demonstration</title>
+
+  <style>
+    input[type="text"] {
+      border: 2px solid #1a73e8;
+      padding: 6px;
+      border-radius: 4px;
+    }
+
+    a[href^="https"] {
+      color: #e63946;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+
+    input[type="text"]:focus {
+      border-color: #ff6b6b;
+      outline: none;
+    }
+
+    li:nth-child(2n) {
+      background: #f2f2f2;
+    }
+
+    ul::before {
+      content: "List Start ↓";
+      display: block;
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #444;
+    }
+
+    ul::after {
+      content: "↑ List End";
+      display: block;
+      font-weight: bold;
+      margin-top: 6px;
+      color: #444;
+    }
+
+    .content p {
+      color: #555;
+    }
+
+
+    .box > p {
+      font-weight: bold;
+      color: #1d3557;
+    }
+
+ 
+    h3 + p {
+      font-style: italic;
+      color: #6a4c93;
+    }
+
+    .note ~ p {
+      color: #d62828;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      padding: 8px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .box, .content {
+      margin-top: 25px;
+      padding: 15px;
+      background: #e9ecef;
+      border-radius: 8px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Advanced CSS Selectors Demo</h1>
+
+  <h2>1. Attribute Selectors + Pseudo-Classes</h2>
+  <input type="text" placeholder="Focus here to see effect">
+
+  <p>Visit site: <a href="https://example.com">Secure Link Example</a></p>
+
+  <h2>2. List with :nth-child() and Pseudo Elements</h2>
+  <ul>
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+    <li>Item Four</li>
+  </ul>
+
+  <h2>3. Combinators</h2>
+
+  <div class="box">
+    <p>This paragraph is a direct child of .box</p>
+    <div>
+      <p>This paragraph is nested inside and NOT a direct child.</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <h3>Heading</h3>
+    <p>This paragraph is styled by h3 + p</p>
+    <p class="note">This is a note paragraph.</p>
+    <p>All paragraphs after note get red text.</p>
+    <p>Another paragraph affected by ~ combinator.</p>
+  </div>
+
+</body>
+</html>
