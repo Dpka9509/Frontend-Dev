@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Height & Width Practice Layout</title>
+
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      color: white;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    .box-1 {
+      width: 200px;
+      height: 150px;
+      background: #ff6b6b;
+    }
+
+ 
+    .box-2 {
+      width: 30%;
+      min-height: 200px;
+      background: #4ecdc4;
+    }
+
+    .box-3 {
+      height: 30vh;
+      max-width: 250px;
+      background: #1a73e8;
+      overflow: auto;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="box box-1">
+      Fixed Size (px)
+    </div>
+
+    <div class="box box-2">
+      Min-Height with % Width
+    </div>
+
+    <div class="box box-3">
+      Overflow Example<br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper tincidunt lorem, in facilisis lorem.
+    </div>
+
+  </div>
+
+</body>
+</html>
