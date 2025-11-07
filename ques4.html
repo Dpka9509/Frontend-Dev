@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Practice</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fb;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+
+    p {
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    .highlight {
+      background: #fff3c4;
+      padding: 6px;
+      border-left: 4px solid #f1c40f;
+    }
+
+    #important-text {
+      color: #e63946;
+      font-weight: bold;
+    }
+
+    a[target="_blank"] {
+      color: #1d4ed8;
+      text-decoration: underline;
+    }
+
+    .info-section p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .list-box > li {
+      font-weight: bold;
+    }
+
+    h3 + p {
+      color: #2a6;
+      font-style: italic;
+    }
+
+    h2 ~ p {
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CSS Selectors Practice Page</h1>
+</header>
+
+<div class="container">
+
+  <h2>Basic Selectors</h2>
+
+  <p>This paragraph uses the element selector.</p>
+  <p class="highlight">This paragraph uses a <strong>class selector</strong>.</p>
+  <p id="important-text">This one uses an ID selector.</p>
+
+  <h3>Attribute Selector Example</h3>
+  <p>
+    Visit: <a href="https://google.com" target="_blank">Google (opens in new tab)</a>
+  </p>
+
+  <h2>Combinator Selectors</h2>
+
+  <div class="info-section">
+    <p>This is inside .info-section (descendant selector applied)</p>
+  </div>
+
+  <ul class="list-box">
+    <li>Child item (styled using > selector)</li>
+    <li>Another bold list item</li>
+  </ul>
+
+  <h3>Adjacent Sibling Selector</h3>
+  <p>This paragraph gets styled because it comes right after h3.</p>
+
+  <h3>General Sibling Selector</h3>
+  <p>This paragraph is affected by the ~ selector after h2 above.</p>
+  <p>Another general sibling paragraph after h2.</p>
+
+</div>
+
+<footer>
+  <p>Made for CSS Selector Practice | 2025</p>
+</footer>
+
+</body>
+</html>
