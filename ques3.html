@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Showcase Layout</title>
+
+<style>
+    body{
+        margin: 0;
+        padding: 40px;
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+    }
+
+    h1{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    figure{
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+    }
+
+    figure img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: 0.3s ease-in-out;
+        display: block;
+    }
+
+    /* Overlay */
+    figure::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0);
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Hover Effects */
+    figure:hover img{
+        transform: scale(1.1);
+    }
+
+    figure:hover::after{
+        background: rgba(0,0,0,0.35);
+    }
+
+    figcaption{
+        text-align: center;
+        padding: 10px 0;
+        font-size: 15px;
+        color: #333;
+        background: #fff;
+    }
+
+    /* Responsive below 700px */
+    @media(max-width: 700px){
+        .gallery{
+            grid-template-columns: 1fr;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<h1>Image Showcase Gallery</h1>
+
+<div class="gallery">
+
+    <figure>
+        <img src="https://via.placeholder.com/350x220" alt="">
+        <figcaption>Beautiful Landscape</figcaption>
+    </figure>
+
+    <figure>
+        <img src="https://via.placeholder.com/350x220" alt="">
+        <figcaption>City Lights</figcaption>
+    </figure>
+
+    <figure>
+        <img src="https://via.placeholder.com/350x220" alt="">
+        <figcaption>Peaceful Forest</figcaption>
+    </figure>
+
+    <figure>
+        <img src="https://via.placeholder.com/350x220" alt="">
+        <figcaption>Mountain Peak</figcaption>
+    </figure>
+
+    <figure>
+        <img src="https://via.placeholder.com/350x220" alt="">
+        <figcaption>Ocean Sunset</figcaption>
+    </figure>
+
+    <figure>
+        <img src="https://via.placeholder.com/350x220" alt="">
+        <figcaption>Desert Dunes</figcaption>
+    </figure>
+
+</div>
+
+</body>
+</html>
