@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Background Webpage</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    header, footer {
+      background: #222;
+      padding: 15px 0;
+      position: fixed;
+      width: 100%;
+      left: 0;
+    }
+
+    header { top: 0; }
+    footer { bottom: 0; }
+
+    main { margin-top: 70px; margin-bottom: 70px; }
+
+    .section-linear {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, #ff6b6b, #f8cdda);
+    }
+
+    .section-radial {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle, #4ecdc4, #1a73e8);
+      background-attachment: fixed;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 0;
+    }
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <h1>Gradient Background Example</h1>
+  </header>
+
+  <main>
+    <section class="section-linear">
+      <h2>Linear Gradient Background</h2>
+    </section>
+
+    <section class="section-radial">
+      <h2>Radial Gradient Background (with background-attachment: fixed)</h2>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created Without JavaScript using only HTML5 & CSS3</p>
+  </footer>
+
+</body>
+</html>
