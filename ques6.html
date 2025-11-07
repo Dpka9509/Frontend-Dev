@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation Demonstration</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #f2f4f7;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    .animation-container {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+    }
+
+    /* Moving Box Animation */
+    .moving-box {
+      width: 80px;
+      height: 80px;
+      background: #0066ff;
+      border-radius: 10px;
+      animation: moveBox 3s ease-in-out infinite alternate;
+    }
+    @keyframes moveBox {
+      from { transform: translateX(0); }
+      to { transform: translateX(120px); }
+    }
+
+    /* Bouncing Ball Animation */
+    .bouncing-ball {
+      width: 60px;
+      height: 60px;
+      background: #ff3b30;
+      border-radius: 50%;
+      animation: bounce 1.2s ease-in-out infinite alternate;
+    }
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-80px); }
+    }
+
+    /* Color Changing Text */
+    .color-text {
+      font-size: 24px;
+      font-weight: bold;
+      animation: colorChange 3s ease-in-out infinite alternate;
+      animation-delay: 0.5s;
+      animation-direction: alternate-reverse;
+    }
+    @keyframes colorChange {
+      0% { color: #333; }
+      50% { color: #ff9800; }
+      100% { color: #4caf50; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>CSS Animation Showcase</h1>
+
+  <div class="animation-container">
+    <div class="moving-box"></div>
+    <div class="bouncing-ball"></div>
+    <div class="color-text">Changing Colors</div>
+  </div>
+
+</body>
+</html>
