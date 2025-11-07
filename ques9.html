@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Effects Demonstration</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .effect-box {
+      padding: 18px 35px;
+      border-radius: 10px;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    /* Button Variants */
+    .btn-primary {
+      background: #4c6ef5;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #3e5de7;
+      transform: scale(1.07) translateY(-4px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    }
+
+    .btn-secondary {
+      background: #ffc048;
+    }
+    .btn-secondary:hover {
+      background: #e6a73c;
+      transform: scale(1.07) translateY(-4px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #555;
+      color: #333;
+    }
+    .btn-outline:hover {
+      background: #333;
+      color: #fff;
+      transform: scale(1.08) translateY(-4px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    }
+
+    /* Active + Focus Effects */
+    .effect-box:active {
+      transform: scale(0.95);
+    }
+
+    .effect-box:focus {
+      outline: 3px solid #3e5de7;
+      outline-offset: 4px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <button class="effect-box btn-primary">Primary</button>
+    <button class="effect-box btn-secondary">Secondary</button>
+    <button class="effect-box btn-outline">Outline</button>
+  </div>
+
+</body>
+</html>
