@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exploration</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f7f3e9;
+            margin: 0;
+        }
+
+        .container{
+            text-align: center;
+        }
+
+        h1{
+            margin-bottom: 20px;
+        }
+
+
+        .box-default{
+            background: #ffeb99;
+            margin: 20px;
+            border: 8px solid #e6b800;
+            padding: 30px;
+            width: 200px;
+        }
+
+        .box-borderbox{
+            background: #cce5ff;
+            margin: 20px;
+            border: 8px solid #0059b3;
+            padding: 30px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+
+        .layer-label{
+            font-size: 14px;
+            margin-top: 8px;
+            color: #333;
+        }
+
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Box Model Exploration</h1>
+
+        <p>The box model consists of <strong>content</strong>, <strong>padding</strong>, 
+        <strong>border</strong>, and <strong>margin</strong>. Below is a visual comparison 
+        of a normal element and one using <code>box-sizing: border-box;</code>.</p>
+
+        <div class="wrapper">
+
+            <div>
+                <div class="box-default">Content</div>
+                <div class="layer-label">Normal box model</div>
+            </div>
+
+            <div>
+                <div class="box-borderbox">Content</div>
+                <div class="layer-label">Using box-sizing: border-box</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
