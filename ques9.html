@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline & Focus Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #eef2f3;
+            margin: 0;
+        }
+
+        .form-container{
+            background: #fff;
+            padding: 25px;
+            width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+
+            /* Outline demonstration */
+            outline: 2px solid transparent;
+            outline-offset: 3px;
+            transition: all 0.3s ease;
+        }
+
+        /* Outline and focus styling */
+        input:focus, textarea:focus{
+            border-color: #3b82f6;
+            outline-color: #3b82f6;
+            outline-offset: 5px;
+            box-shadow: 0 0 8px rgba(59,130,246,0.5);
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            background: #3b82f6;
+            color: #fff;
+            font-size: 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background: #1e60d6;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Feedback Form</h2>
+
+        <form>
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Your Message</label>
+            <textarea rows="4" placeholder="Write something..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
