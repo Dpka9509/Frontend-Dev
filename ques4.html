@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadows and Depth Effect Layout</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 30px;
+    }
+
+    h2 {
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+      text-align: center;
+      margin-bottom: 40px;
+      width: 100%;
+      position: absolute;
+      top: 30px;
+    }
+
+    .card {
+      width: 230px;
+      padding: 20px;
+      border-radius: 12px;
+      background: white;
+      transition: 0.3s;
+    }
+
+    .card-1 {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .card-2 {
+      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+    }
+
+    .card-3 {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 16px 32px rgba(0,0,0,0.35);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      margin: 10px 0 6px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    }
+
+    p {
+      margin: 0;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h2>Shadows & Depth Card Layout</h2>
+
+  <div class="card-container">
+
+    <div class="card card-1">
+      <img src="https://via.placeholder.com/230x120" alt="">
+      <h3>Basic Shadow</h3>
+      <p>Soft subtle depth for cleaner look.</p>
+    </div>
+
+    <div class="card card-2">
+      <img src="https://via.placeholder.com/230x120" alt="">
+      <h3>Medium Shadow</h3>
+      <p>More noticeable elevation and depth.</p>
+    </div>
+
+    <div class="card card-3">
+      <img src="https://via.placeholder.com/230x120" alt="">
