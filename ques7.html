@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta viewport="width=device-width, initial-scale=1.0">
+  <title>UI Components Page</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #a3c9ff, #f6d2ff);
+      font-family: Arial, sans-serif;
+    }
+
+    .ui-card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      width: 320px;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    input, select, button {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #bbb;
+      font-size: 15px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus, select:focus {
+      border-color: #6a5af9;
+      box-shadow: 0 0 8px rgba(106,90,249,0.6);
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    button {
+      cursor: pointer;
+      background: #6a5af9;
+      color: white;
+      border: none;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #5947e8;
+      transform: translateY(-2px);
+    }
+
+    button:active {
+      transform: scale(0.96);
+    }
+
+    .secondary-btn {
+      background: #e0e0e0;
+      color: #333;
+    }
+
+    .secondary-btn:hover {
+      background: #cfcfcf;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ui-card">
+    <h2>UI Components</h2>
+
+    <input type="text" placeholder="Search something...">
+
+    <select>
+      <option>Select an option</option>
+      <option>Option One</option>
+      <option>Option Two</option>
+      <option>Option Three</option>
+    </select>
+
+    <div class="btn-group">
+      <button>Search</button>
+      <button class="secondary-btn">Cancel</button>
+    </div>
+  </div>
+
+</body>
+</html>
