@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navigation Bar</title>
+
+<style>
+    body{
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+    }
+
+    /* Navigation Bar */
+    nav{
+        background: #1e3a8a;
+        padding: 12px 0;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 16px;
+        border-radius: 6px;
+        transition: all 0.3s ease; /* Smooth Hover Effect */
+    }
+
+    /* Hover Effect */
+    ul li a:hover{
+        background: #3b82f6;
+    }
+
+    /* Active Link Highlight */
+    .active{
+        background: #3b82f6;
+        border-bottom: 3px solid yellow;
+    }
+
+    /* Responsive Design */
+    @media(max-width: 700px){
+        ul{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    /* Footer */
+    footer{
+        background: #1e3a8a;
+        text-align: center;
+        padding: 14px 0;
+        color: white;
+        margin-top: 50px;
+    }
+
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<footer>
+    © 2025 Your Website • All Rights Reserved
+</footer>
+
+</body>
+</html>
