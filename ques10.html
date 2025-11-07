@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini UI Layout</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #dfe9ff, #ffe5f1);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 15px;
+      background: #333;
+      color: white;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 25px;
+      width: 350px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    img {
+      width: 120px;
+      border-radius: 8px;
+      margin: auto;
+    }
+
+    input, button {
+      padding: 12px;
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #bbb;
+      font-size: 15px;
+      transition: 0.3s;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #6a5af9;
+      box-shadow: 0 0 8px rgba(106, 90, 249, 0.6);
+    }
+
+    .btn-primary {
+      background: #6a5af9;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn-primary:hover {
+      background: #5947e8;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    .btn-primary:active {
+      transform: scale(0.96);
+    }
+
+    .btn-secondary {
+      background: #f0f0f0;
+      border: 1px solid #aaa;
+    }
+
+    .btn-secondary:hover {
+      background: #e0e0e0;
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <h2>Mini User Interface Layout</h2>
+  </header>
+
+  <main>
+    <div class="card">
+      <img src="https://via.placeholder.com/120" alt="Profile">
+
+      <input type="text" placeholder="Enter your name">
+
+      <input type="email" placeholder="Enter your email">
+
+      <button class="btn-primary">Submit</button>
+      <button class="btn-secondary">Cancel</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 - UI Demo Page | No Frameworks Used</p>
+  </footer>
+
+</body>
+</html>
