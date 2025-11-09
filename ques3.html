@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Cards with Media Queries</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        padding: 30px;
+    }
+
+    .card-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        text-align: center;
+        flex: 1 1 calc(25% - 20px); /* Desktop: 4 columns */
+        transition: background 0.3s ease;
+    }
+
+    .card:hover {
+        background: #dfe9ff;
+    }
+
+    /* Tablet: 2 Columns */
+    @media (max-width: 900px) {
+        .card {
+            flex: 1 1 calc(50% - 20px);
+        }
+    }
+
+    /* Mobile: 1 Column */
+    @media (max-width: 600px) {
+        .card {
+            flex: 1 1 100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<h2>Responsive Cards Layout</h2>
+
+<div class="card-container">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+</div>
+
+</body>
+</html>
