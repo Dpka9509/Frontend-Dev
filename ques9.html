@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Design Principles Summary</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f3f6fa;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    /* Grid Layout */
+    .principles {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .box {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        transition: background 0.4s ease, color 0.4s ease, transform 0.3s ease;
+    }
+
+    /* Hover gradient effect */
+    .box:hover {
+        background: linear-gradient(135deg, #4f8aff, #6dd5fa);
+        color: white;
+        transform: translateY(-6px);
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    code {
+        display: block;
+        margin-top: 10px;
+        background: #eceff3;
+        padding: 8px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    /* Stack layout below 600px */
+    @media(max-width: 600px) {
+        .principles {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Responsive Design Principles</h1>
+
+<div class="principles">
+
+    <div class="box">
+        <div class="title">Fluid Layouts</div>
+        <p>Use relative units so layout adjusts to different screens.</p>
+        <code>
+container { width: 90%; max-width: 1200px; }
+        </code>
+    </div>
+
+    <div class="box">
+        <div class="title">Flexible Media</div>
+        <p>Images and videos scale with their containers.</p>
+        <code>
+img { max-width: 100%; height: auto; }
+        </code>
+    </div>
+
+    <div class="box">
+        <div class="title">Breakpoints</div>
+        <p>Adjust layout when screen size changes.</p>
+        <code>
+@media (max-width: 600px) { ... }
+        </code>
+    </div>
+
+</div>
+
+</body>
+</html>
