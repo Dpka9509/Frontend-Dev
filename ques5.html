@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filter Cards with Animation</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #eef1f6;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-container {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+        animation: fadeIn 1s ease forwards;
+        opacity: 0;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+        background: white;
+        width: 260px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+        transition: filter 0.3s ease;
+    }
+
+    /* Image Filters */
+    .grayscale img { filter: grayscale(100%); }
+    .sepia img { filter: sepia(100%); }
+    .contrast img { filter: contrast(200%); }
+
+    /* Hover removes filter */
+    .card:hover img {
+        filter: none;
+    }
+
+    /* Responsive stacking */
+    @media(max-width: 800px) {
+        .card-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="card-container">
+    <div class="card grayscale">
+        <img src="https://picsum.photos/260?1" alt="">
+        <h3>John Doe</h3>
+        <p>Web Developer</p>
+    </div>
+
+    <div class="card sepia">
+        <img src="https://picsum.photos/260?2" alt="">
+        <h3>Sarah Smith</h3>
+        <p>UI/UX Designer</p>
+    </div>
+
+    <div class="card contrast">
+        <img src="https://picsum.photos/260?3" alt="">
+        <h3>Michael Lee</h3>
+        <p>Photographer</p>
+    </div>
+</div>
+
+</body>
+</html>
