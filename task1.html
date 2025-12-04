@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      table {
+        width: 80%;
+        border-collapse: collapse;
+        margin: 20px;
+      }
+      table, th, td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      #loader {
+        display: none;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+      }
+
+      #refreshbtn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="refreshbtn">Refresh</button>
+    <div id="loader">Loading...</div>
+
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- Load JS at the end so DOM is ready -->
+    <script src="task1.js"></script>
+  </body>
+</html>
